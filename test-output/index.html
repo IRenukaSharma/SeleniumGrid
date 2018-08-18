@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-failed">Regression</span>
+              <span class="suite-name border-passed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
-                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
-                    </span>
-                    <div class="method-list-content failed suite-Regression">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="org.automation.testcases.AngularTests" hash-for-method="AngularApplicationTest">AngularApplicationTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Regression -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -131,41 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
-          <div class="suite-Regression-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.automation.testcases.AngularTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AngularApplicationTest">
-                  </a> <!-- AngularApplicationTest -->
-                  <span class="method-name">AngularApplicationTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for org.automation.helpers.selenium.WebElementFinder$1@a38c7fe (tried for 30 second(s) with 600 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at org.automation.helpers.selenium.WebElementFinder.GetElement(WebElementFinder.java:17)
-	at com.automation.angular.pageobjects.BankLoginPage.CustomerLoginBtn(BankLoginPage.java:13)
-	at com.automation.angular.pageobjects.BankLoginPage.ClickOnCustomerLoginButton(BankLoginPage.java:21)
-	at org.automation.testcases.AngularTests.AngularApplicationTest(AngularTests.java:15)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using [unknown locator]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
-System info: host: &apos;DESKTOP-94HMJT1&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.By.findElement(By.java:162)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
-	at org.automation.helpers.selenium.WebElementFinder$1.apply(WebElementFinder.java:19)
-	at org.automation.helpers.selenium.WebElementFinder$1.apply(WebElementFinder.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 29 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -194,7 +145,6 @@ Driver info: driver.version: RemoteWebDriver
   &lt;test name=&quot;Regression&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.automation.testcases.LoginTest&quot;/&gt;
-      &lt;class name=&quot;org.automation.testcases.AngularTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Regression --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
@@ -208,7 +158,7 @@ Driver info: driver.version: RemoteWebDriver
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Regression (2 classes)</span>
+                <span class="test-name">Regression (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,20 +184,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AngularApplicationTest')
-data.setCell(0, 2, 'org.automation.testcases.AngularTests')
-data.setCell(0, 3, 32662);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginWithCredentials')
-data.setCell(1, 2, 'org.automation.testcases.LoginTest')
-data.setCell(1, 3, 7775);
+data.setCell(0, 1, 'LoginWithCredentials')
+data.setCell(0, 2, 'org.automation.testcases.LoginTest')
+data.setCell(0, 3, 8000);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -262,18 +208,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">org.automation.testcases.AngularTests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">Flush</span>
-                <br/>
-                <span class="ignored-method-name">TestIntialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Regression" class="panel">
@@ -289,23 +226,11 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">LoginWithCredentials</span>
-                <span class="method-start">3993 ms</span>
+                <span class="method-start">4929 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.automation.testcases.AngularTests</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AngularApplicationTest</span>
-                <span class="method-start">11769 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">org.automation.testcases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">Flush</span>
-                <span class="method-start">44438 ms</span>
+                <span class="method-start">12931 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

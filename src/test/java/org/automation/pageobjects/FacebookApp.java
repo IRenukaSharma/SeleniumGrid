@@ -18,6 +18,7 @@ public class FacebookApp {
 	// Navigate to application
 	public void NavigateToApplication() {
 		WebDriverHelper.navigateToApplication(PROD_URL);
+		System.out.println("Title:"+_driver.getTitle());
 	}
 
 	public LoginPage LoginPage() {
