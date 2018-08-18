@@ -1,0 +1,1 @@
+mvn test -Dsurefire.suiteXmlFiles=Regression.xml

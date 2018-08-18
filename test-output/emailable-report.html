@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Regression</th></tr><tr><td><a href="#t0">Regression</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">44,563</td><td></td><td></td></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.automation.testcases.AngularTests</td><td><a href="#m0">AngularApplicationTest</a></td><td rowspan="1">1534609402341</td><td rowspan="1">32662</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.automation.testcases.LoginTest</td><td><a href="#m1">LoginWithCredentials</a></td><td rowspan="1">1534609394565</td><td rowspan="1">7775</td></tr></tbody></table><h2>Regression</h2><h3 id="m0">org.automation.testcases.AngularTests#AngularApplicationTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for org.automation.helpers.selenium.WebElementFinder$1@a38c7fe (tried for 30 second(s) with 600 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at org.automation.helpers.selenium.WebElementFinder.GetElement(WebElementFinder.java:17)
+	at com.automation.angular.pageobjects.BankLoginPage.CustomerLoginBtn(BankLoginPage.java:13)
+	at com.automation.angular.pageobjects.BankLoginPage.ClickOnCustomerLoginButton(BankLoginPage.java:21)
+	at org.automation.testcases.AngularTests.AngularApplicationTest(AngularTests.java:15)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using [unknown locator]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-94HMJT1&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.By.findElement(By.java:162)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at org.automation.helpers.selenium.WebElementFinder$1.apply(WebElementFinder.java:19)
+	at org.automation.helpers.selenium.WebElementFinder$1.apply(WebElementFinder.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 29 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">org.automation.testcases.LoginTest#LoginWithCredentials</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

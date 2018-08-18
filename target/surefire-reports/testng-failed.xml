@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression]">
+  <test name="Regression(failed)">
+    <classes>
+      <class name="org.automation.testcases.AngularTests">
+        <methods>
+          <include name="Flush"/>
+          <include name="TestIntialization"/>
+          <include name="AngularApplicationTest"/>
+        </methods>
+      </class> <!-- org.automation.testcases.AngularTests -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [Regression] -->
